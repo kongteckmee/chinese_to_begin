@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    background-color: #bfc9ca;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Merriweather', serif;
@@ -22,23 +23,23 @@ body {
 }
 
 .sign-up-now-button {
-    background: #1e90ff;
+    background: #5499c7;
     color: white;
     min-width: 260px;
 }
 
 .btn-blue {
-    background: #1e90ff;
+    background: #5499c7;
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
+.sign-up-now-button:hover,
+.sign-up-now-button:active,
+.sign-up-now-button:focus,
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
+    background: #2471a3;
     color: white;
 }
 
@@ -47,7 +48,7 @@ body {
 }
 
 .text-blue {
-    color: #1e90ff;
+    color: #2471a3;
 }
 
 .border-black {
@@ -71,9 +72,5 @@ body {
         right: 0;
         left: 0;
         z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
     }
 }
