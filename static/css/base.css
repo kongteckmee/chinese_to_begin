@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: #bfc9ca;
-    height: calc(180vh - 130px);
+    /* height: calc(180vh - 130px); */
     color: #555555;
     font-family: 'Merriweather', serif;
 }
