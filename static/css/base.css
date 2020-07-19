@@ -4,8 +4,8 @@ html {
 
 body {
     background-color: #bfc9ca;
-    height: calc(100vh - 164px);
-    color: #555;
+    height: calc(180vh - 130px);
+    color: #555555;
     font-family: 'Merriweather', serif;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #303030 !important;
 }
 
 .text-blue {
@@ -52,7 +52,11 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #303030 !important;
+}
+
+.border-4 {
+    border-width: 4px !important;
 }
 
 /* -------------------------------- Media Queries */
@@ -72,5 +76,9 @@ body {
         right: 0;
         left: 0;
         z-index: 1030;
+    }
+
+     .header-container {
+        padding-top: 130px;
     }
 }
