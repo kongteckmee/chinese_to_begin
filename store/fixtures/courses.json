@@ -1,0 +1,86 @@
+[
+    {
+        "pk": 1,
+        "model": "store.course",
+        "fields": {
+            "sku": "CHI-C-1",
+            "name": "Beginner Course",
+            "description_1": "50 Video Lessons",
+            "description_2": "Interactive Quiz",
+            "description_3": "Comprehensive Practice",
+            "description_4": "Lifetime Access",
+            "price": 100,
+            "image": "c-1-beginner.png"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "store.course",
+        "fields": {
+            "sku": "CHI-C-2",
+            "name": "Intermediate Course",
+            "description_1": "60 Video Lessons",
+            "description_2": "Interactive Quiz",
+            "description_3": "Comprehensive Practice",
+            "description_4": "Lifetime Access",
+            "price": 120,
+            "image": "c-2-intermediate.png"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "store.course",
+        "fields": {
+            "sku": "CHI-C-3",
+            "name": "Advanced Course",
+            "description_1": "100 Video Lessons",
+            "description_2": "Interactive Quiz",
+            "description_3": "Comprehensive Practice",
+            "description_4": "Lifetime Access",
+            "price": 150,
+            "image": "c-3-advanced.png"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "store.course",
+        "fields": {
+            "sku": "CHI-C-4",
+            "name": "Chinese Pinyin Course",
+            "description_1": "55 Illustracted Videos",
+            "description_2": "Interactive Quiz & Practice",
+            "description_3": "Detailed Notes",
+            "description_4": "Lifetime Access",
+            "price": 120,
+            "image": "c-4-pinyin.png"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "store.course",
+        "fields": {
+            "sku": "CHI-C-5",
+            "name": "Chinese Character Course",
+            "description_1": "80 Video Lessons",
+            "description_2": "Interactive Quiz and Practice",
+            "description_3": "2,020 Character Words",
+            "description_4": "Lifetime Access",
+            "price": 120,
+            "image": "c-5-character.png"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "store.course",
+        "fields": {
+            "sku": "CHI-C-6",
+            "name": "Course Bundle",
+            "description_1": "5 full courses with 200 Video Lessons",
+            "description_2": "Grammar & Learning Tips",
+            "description_3": "Interactive Quiz & Practice",
+            "description_4": "Lifetime Access",
+            "price": 500,
+            "image": "c-6-bundle.png"
+        }
+    }
+]
