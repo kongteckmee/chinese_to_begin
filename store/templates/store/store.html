@@ -3,10 +3,28 @@
 
 {% block content %}
     <div class="container">
-        <div class="row">
-            <div class="col">
-                {{ store }}
+        {% for store in store %}
+            <div class="row mb-5 border border-4 border-light rounded-lg bg-light shadow">
+                <div class="col-3 col-md-2 ml-5 my-auto">
+                    <img src="/media/{{ store.image }}" alt="{{ store.name }}">
+                </div>
+                <div class="col-6 col-md-7 my-auto">
+                    <h1 class="logo-font text-blue mt-5 mb-3">
+                        {{ store.name }}        
+                    </h1>     
+                    <h5><i class="fa fa-check text-danger pr-2" aria-hidden="true"></i> {{ store.description_1 }}</h5>
+                    <h5><i class="fa fa-check text-danger pr-2" aria-hidden="true"></i> {{ store.description_2 }}</h5>
+                    <h5><i class="fa fa-check text-danger pr-2" aria-hidden="true"></i> {{ store.description_3 }}</h5>
+                    <h5><i class="fa fa-check text-danger mb-5 pr-2" aria-hidden="true"></i> {{ store.description_4 }}</h5>
+                </div>                
+                <div class="col-2 col-md-2 my-auto">
+                    <h2 class="logo-font text-danger mx-auto">$ {{ store.price }}</h2>
+                    <h6 class="py-3">
+                        <a href="" class="btn btn-warning btn-sm rounded-1 text-uppercase py-3 px-3 my-auto mx-auto">Add to Cart</a>
+                    </h6>
+                </div>
+                
             </div>
-        </div>
+        {% endfor %}
     </div>
 {% endblock %}

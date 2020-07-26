@@ -82,3 +82,14 @@ body {
         padding-top: 130px;
     }
 }
+
+/* Pad the top on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 50px;
+    }
+
+    .body {
+        height: calc(100vh-50px);
+    }
+}
