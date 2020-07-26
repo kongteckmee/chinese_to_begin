@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Course
+from .models import Store
 
 # Register your models here.
 
-class CourseAdmin(admin.ModelAdmin):
+class StoreAdmin(admin.ModelAdmin):
     list_display = (
         'sku' ,
         'name' ,
@@ -17,4 +17,4 @@ class CourseAdmin(admin.ModelAdmin):
 
     ordering = ('sku',)
 
-admin.site.register(Course, CourseAdmin)
+admin.site.register(Store, StoreAdmin)

@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Course(models.Model):
+class Store(models.Model):
     sku = models.CharField(max_length=20, null=True, blank=True)
     name = models.CharField(max_length=254)
     description_1 = models.TextField()

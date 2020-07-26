@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def index(request):
-    """ A view to return the index page """
+def tips(request):
+    """ A view to show the tips page """
     
-    return render(request, 'tips/index.html')
+    return render(request, 'tips/tips.html')

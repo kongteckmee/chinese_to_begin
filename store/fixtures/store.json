@@ -1,7 +1,7 @@
 [
     {
         "pk": 1,
-        "model": "store.course",
+        "model": "store.store",
         "fields": {
             "sku": "CHI-C-1",
             "name": "Beginner Course",
@@ -15,7 +15,7 @@
     },
     {
         "pk": 2,
-        "model": "store.course",
+        "model": "store.store",
         "fields": {
             "sku": "CHI-C-2",
             "name": "Intermediate Course",
@@ -29,7 +29,7 @@
     },
     {
         "pk": 3,
-        "model": "store.course",
+        "model": "store.store",
         "fields": {
             "sku": "CHI-C-3",
             "name": "Advanced Course",
@@ -43,7 +43,7 @@
     },
     {
         "pk": 4,
-        "model": "store.course",
+        "model": "store.store",
         "fields": {
             "sku": "CHI-C-4",
             "name": "Chinese Pinyin Course",
@@ -57,7 +57,7 @@
     },
     {
         "pk": 5,
-        "model": "store.course",
+        "model": "store.store",
         "fields": {
             "sku": "CHI-C-5",
             "name": "Chinese Character Course",
@@ -71,7 +71,7 @@
     },
     {
         "pk": 6,
-        "model": "store.course",
+        "model": "store.store",
         "fields": {
             "sku": "CHI-C-6",
             "name": "Course Bundle",

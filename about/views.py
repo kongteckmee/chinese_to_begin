@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def index(request):
-    """ A view to return the index page """
+def about(request):
+    """ A view to show the about page """
     
-    return render(request, 'about/index.html')
+    return render(request, 'about/about.html')
