@@ -9,7 +9,9 @@
             "description_2": "Interactive Quiz",
             "description_3": "Comprehensive Practice",
             "description_4": "Lifetime Access",
+            "before_discount": 120,
             "price": 100,
+            "category": 1,
             "image": "c-1-beginner.png"
         }
     },
@@ -23,7 +25,9 @@
             "description_2": "Interactive Quiz",
             "description_3": "Comprehensive Practice",
             "description_4": "Lifetime Access",
+            "before_discount": 140,
             "price": 120,
+            "category": 1,
             "image": "c-2-intermediate.png"
         }
     },
@@ -37,7 +41,9 @@
             "description_2": "Interactive Quiz",
             "description_3": "Comprehensive Practice",
             "description_4": "Lifetime Access",
+            "before_discount": 170,
             "price": 150,
+            "category": 1,
             "image": "c-3-advanced.png"
         }
     },
@@ -51,7 +57,9 @@
             "description_2": "Interactive Quiz & Practice",
             "description_3": "Detailed Notes",
             "description_4": "Lifetime Access",
+            "before_discount": 140,
             "price": 120,
+            "category": 1,
             "image": "c-4-pinyin.png"
         }
     },
@@ -65,7 +73,9 @@
             "description_2": "Interactive Quiz and Practice",
             "description_3": "2,020 Character Words",
             "description_4": "Lifetime Access",
+            "before_discount": 140,
             "price": 120,
+            "category": 1,
             "image": "c-5-character.png"
         }
     },
@@ -79,7 +89,9 @@
             "description_2": "Grammar & Learning Tips",
             "description_3": "Interactive Quiz & Practice",
             "description_4": "Lifetime Access",
+            "before_discount": 600,
             "price": 500,
+            "category": 2,
             "image": "c-6-bundle.png"
         }
     }

@@ -1,0 +1,16 @@
+[
+    {
+        "pk": 1,
+        "model": "store.category",
+        "fields": {
+            "name": "Single"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "store.category",
+        "fields": {
+            "name": "Bundle"
+        }
+    }
+]
