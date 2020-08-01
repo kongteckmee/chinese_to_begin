@@ -59,6 +59,18 @@ body {
     border-width: 4px !important;
 }
 
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
