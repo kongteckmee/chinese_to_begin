@@ -26,7 +26,7 @@ def __init__(self, *args, **kwargs):
         'county': 'County',
     }
 
-    self.fields['full_name'].widget.attrs['autofocus'] =True
+    self.fields['full_name'].widget.attrs['autofocus'] = True
     for field in self.fields:
         if self.fields[field].required:
             placeholder = f'{placeholders[field]} *'
