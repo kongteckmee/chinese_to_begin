@@ -40,46 +40,51 @@
   <body>   
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 pb-lg-2 d-none d-lg-flex">
-                <div class="col-12 col-lg-4 my-auto py-lg-0 text-center text-lg-left">
-                    <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-font text-black my-0"><strong>CHI</strong>Begin</h2>
-                    </a>
-                </div>  
-                <div class="col-12 col-lg-8 my-auto py-1 py-lg-0">
-                    <ul class="list-inline list-unstyled text-center text-lg-right my-0">                  
-                        <li class="list-inline-item">
-                            <a class="text-black nav-link" href="{% url 'home' %}">Home</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="text-black nav-link" href="{% url 'tips' %}">Tips of Learning</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="text-black nav-link" href="{% url 'store' %}">Store</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="text-black nav-link" href="{% url 'about' %}">About</a>
-                        </li>
-                        <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="text-center">
-                                    <p class="my-0">My Account</p>
-                                </div>
-                            </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                {% if request.user.is_authenticated %}
-                                    {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item text-black">Store Management</a>
-                                    {% endif %}
-                                    <a href="" class="dropdown-item text-black">My Profile</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item text-black">Logout</a>
-                                {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item text-black">Register</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item text-black">Login</a>
-                                {% endif %}
+            <div class="col-12 col-lg-4 my-auto py-lg-0 text-center text-lg-left">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <h2 class="logo-font text-black my-0"><strong>CHI</strong>Begin</h2>
+                </a>
+            </div>  
+            <div class="col-12 col-lg-8 my-auto py-1 py-lg-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">                  
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="{% url 'tips' %}">Tips of Learning</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="{% url 'store' %}">Store</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="list-inline-item dropdown">
+                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center">
+                                <p class="my-0">My Account</p>
                             </div>
-                        </li>
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                    <a href="" class="dropdown-item text-black">Store Management</a>
+                                {% endif %}
+                                <a href="" class="dropdown-item text-black">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item text-black">Logout</a>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item text-black">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item text-black">Login</a>
+                            {% endif %}
+                        </div>
+                    </li>
                 </ul>
-                </div>
+            </div>
+        </div>
+        <div id="discount-banner" class="row text-center">
+            <div class="col bg-dark text-light border border-4 border-light">
+                <h6 class="logo-font my-1">More discounts available in every course. Sign up now to get the offer!</h6>
+            </div>
         </div>
     </header>
 
