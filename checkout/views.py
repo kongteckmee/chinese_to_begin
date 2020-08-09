@@ -5,7 +5,6 @@ from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-from store.models import Store
 
 import stripe
 
@@ -20,19 +19,27 @@ def checkout(request):
         store = get_object_or_404(Store, pk=store_id)
 
         form_data = {
-            'full_name': request.POST['full_name'],
-            'email': request.POST['email'],
-            'phone_number': request.POST['phone_number'],
-            'country': request.POST['country'],
-            'street_address_1': request.POST['street_address_1'],
-            'street_address_2': request.POST['street_address_2'],
-            'town_or_city': request.POST['town_or_city'],
-            'county': request.POST['county'],
-            'postcode': request.POST['postcode'],
+            'full_name': request.POST.get['full_name'],
+            'email': request.POST.get['email'],
+            'phone_number': request.POST.get['phone_number'],
+            'country': request.POST.get['country'],
+            'street_address_1': request.POST.get['street_address_1'],
+            'street_address_2': request.POST.get['street_address_2'],
+            'town_or_city': request.POST.get['town_or_city'],
+            'county': request.POST.get['county'],
+            'postcode': request.POST.get['postcode'],
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save()
+
+            store = Store.objects.get(id=store_id)
+            order_line_item = OrderLineItem(
+                order=order,
+                store=store,
+            )
+            order_line_item.save()
+
             request.session['save_info'] = 'save_info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
@@ -50,10 +57,6 @@ def checkout(request):
 
         order_form = OrderForm()
 
-    if not stripe_public_key:
-        messages.warning(request, 'Stripe public key is missing. \
-            Did you forget to set it in your environment?')
-
     template = 'checkout/checkout.html'
     context = {
         'store': store,
@@ -70,9 +73,9 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
-    messages.success(request, f'Order successfully processed! \
-        Your order number is {order_number}. A confirmation \
-        email will be sent to {order.email}.')
+    # messages.success(request, f'Order successfully processed! \
+    #     Your order number is {order_number}. A confirmation \
+    #     email will be sent to {order.email}.')
 
     template = 'checkout/checkout_success.html'
     context = {

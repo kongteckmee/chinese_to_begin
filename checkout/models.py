@@ -33,7 +33,7 @@ class Order(models.Model):
         """
         Update line item total
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
         self.save()
 
 
