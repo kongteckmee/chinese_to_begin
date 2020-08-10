@@ -19,21 +19,22 @@ def checkout(request):
         store = get_object_or_404(Store, pk=store_id)
 
         form_data = {
-            'full_name': request.POST.get['full_name'],
-            'email': request.POST.get['email'],
-            'phone_number': request.POST.get['phone_number'],
-            'country': request.POST.get['country'],
-            'street_address_1': request.POST.get['street_address_1'],
-            'street_address_2': request.POST.get['street_address_2'],
-            'town_or_city': request.POST.get['town_or_city'],
-            'county': request.POST.get['county'],
-            'postcode': request.POST.get['postcode'],
+            'full_name': request.POST.get('full_name'),
+            'email': request.POST.get('email'),
+            'phone_number': request.POST.get('phone_number'),
+            'country': request.POST.get('country'),
+            'street_address_1': request.POST.get('street_address_1'),
+            'street_address_2': request.POST.get('street_address_2'),
+            'town_or_city': request.POST.get('town_or_city'),
+            'county': request.POST.get('county'),
+            'postcode': request.POST.get('postcode'),
         }
         order_form = OrderForm(form_data)
+
         if order_form.is_valid():
             order = order_form.save()
 
-            store = Store.objects.get(id=store_id)
+            # store = store_id
             order_line_item = OrderLineItem(
                 order=order,
                 store=store,
@@ -46,7 +47,7 @@ def checkout(request):
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
     else:
-        store_id = request.POST.get("store_id")
+        store_id = request.GET["store_id"]
         store = get_object_or_404(Store, pk=store_id)
         stripe_total = store.price * 100
         stripe.api_key = stripe_secret_key
@@ -73,9 +74,9 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
-    # messages.success(request, f'Order successfully processed! \
-    #     Your order number is {order_number}. A confirmation \
-    #     email will be sent to {order.email}.')
+    messages.success(request, f'Order successfully processed! \
+        Your order number is {order_number}. A confirmation \
+        email will be sent to {order.email}.')
 
     template = 'checkout/checkout_success.html'
     context = {
