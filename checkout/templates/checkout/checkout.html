@@ -11,20 +11,20 @@
     <div class="container mb-2">
         <div class="row">
             <div class="col">
-                <h2 class="logo-font mb-4">Checkout</h2>
+                <h2 class="logo-font text-primary mb-4">Checkout</h2>
                 <hr>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 col-lg-6 order-lg-last mb-5">
-                <p class="text-muted">Order Summary</p>
+                <p class="text-black">Order Summary</p>
                 <div class="row">
                     <div class="col-7 offset-2">
-                        <p class="mb-1 mt-0 small text-muted">Course</p>
+                        <p class="mb-1 mt-0 small text-black">Course</p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="mb-1 mt-0 small text-muted">Price</p>
+                        <p class="mb-1 mt-0 small text-black">Price</p>
                     </div>
                 </div>
                 <div class="row mt-3 mb-3">
@@ -37,11 +37,11 @@
                         <p class="my-0"><strong>{{ store.name }}</strong></p>
                     </div>
                     <div class="col-3 col-md-3 col-lg-3 text-right">
-                        <p class="my-0 small text-muted">$ {{ store.price }}</p>
+                        <p class="my-0 small text-black">$ {{ store.price }}</p>
                     </div>
                 </div>
                 <hr class="my-0">
-                <div class="row text-dark text-right mt-2">
+                <div class="row text-black text-right mt-2">
                     <div class="col-7 offset-2">
                         <p class="my-0">Total: </p>
                     </div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Please fill out the form to complete your order:</p>
+                <p class="text-black">Please fill out the form to complete your order:</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <input type="hidden" name="store_id" value="{{ store.id }}">
