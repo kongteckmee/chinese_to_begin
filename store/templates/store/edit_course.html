@@ -8,19 +8,20 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <h2 class="logo-font text-primary mb-4">Store Management</h2>
-                <h5 class="text-muted">Add a Course</h5>
+                <h5 class="text-muted">Edit a Course</h5>
                 <hr>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'add_course' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'edit_course' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
+                    <input type="hidden" name="store_id" value="{{ store.id }}">
                     {{ form | crispy }}
                     <div class="text-right">
                         <a class="btn btn-outline-black rounded-1" href="{% url 'store' %}">Cancel</a>
-                        <button class="btn btn-outline-black rounded-1" type="submit">Add Course</button>
+                        <button class="btn btn-outline-black rounded-1" type="submit">Update Course</button>
                     </div>
                 </form>                
             </div>
