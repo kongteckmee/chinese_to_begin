@@ -9,6 +9,7 @@ from django_countries.fields import CountryField
 from store.models import Store
 from profiles.models import UserProfile
 
+
 # Create your models here.
 
 class Order(models.Model):
