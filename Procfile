@@ -1,0 +1,1 @@
+web: gunicorn chinese_to_begin.wsgi:application
