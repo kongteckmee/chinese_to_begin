@@ -4,7 +4,7 @@ from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-from store.models import Store
+from .models import Store
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 
@@ -117,9 +117,9 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
-    messages.success(request, f'Order successfully processed! \
-        Your order number is {order_number}. A confirmation \
-        email will be sent to {order.email}.')
+    # messages.success(request, f'Order successfully processed! \
+    #     Your order number is {order_number}. A confirmation \
+    #     email will be sent to {order.email}.')
 
     template = 'checkout/checkout_success.html'
     context = {

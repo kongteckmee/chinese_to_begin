@@ -52,10 +52,10 @@ def edit_course(request, store_id):
     store = get_object_or_404(Store, pk=store_id)
     if request.method == 'POST':
         form = CourseForm(request.POST, request.FILES, instance=store)
-        # if form.is_valid():
-        form.save()
+        if form.is_valid():
+            form.save()
             # messages.success(request, 'Successfully updated product!')
-        return redirect(reverse('course_detail', args=[store.id]))
+            return redirect(reverse('store'))
         # else:
             # return f'{"Failed to add course. Please ensure the form is valid."}'
     else:
