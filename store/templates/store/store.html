@@ -6,7 +6,7 @@
         {% for store in store %}
             <div class="row mb-5 border border-4 border-light rounded-lg bg-light shadow">
                 <div class="col-3 col-md-2 ml-5 my-auto">
-                    <img src="/media/{{ store.image }}" alt="{{ store.name }}">
+                    <img src="{{ MEDIA_URL }}{{ store.image }}" alt="{{ store.name }}">
                 </div>
                 <div class="col-6 col-md-7 my-auto">
                     <h1 class="logo-font text-blue mt-5 mb-3">
