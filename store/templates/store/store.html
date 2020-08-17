@@ -20,6 +20,12 @@
                 <div class="col-2 col-md-2 my-auto">
                     <h3 class="mx-auto"><s>$ {{ store.before_discount }}</s></h3>
                     <h1 class="logo-font text-danger mx-auto">$ {{ store.price }}</h1>
+                    {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a href="{% url 'edit_course' store.id %}">Edit</a> |
+                            <a class="text-danger" href="{% url 'delete_course' store.id %}">Delete</a>
+                        </small>
+                    {% endif %}
                     <h6 class="py-2">
                         <a href="{% url 'course_detail' store.id %}" class="btn btn-warning text-uppercase rounded-1 my-auto mx-auto">Select</a>
                     </h6>
