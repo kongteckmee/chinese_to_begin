@@ -96,6 +96,39 @@
                         </div>
                     </a>
                 </li>
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">                  
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="{% url 'tips' %}">Tips of Learning</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="{% url 'store' %}">Store</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="list-inline-item dropdown">
+                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center">
+                                <p class="my-0">My Account</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                    <a href="{% url 'add_course' %}" class="dropdown-item text-black">Store Management</a>
+                                {% endif %}
+                                <a href="{% url 'profile' %}" class="dropdown-item text-black">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item text-black">Logout</a>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item text-black">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item text-black">Login</a>
+                            {% endif %}
+                        </div>
+                    </li>
+                </ul>
             </nav>
         </div>
         <div id="discount-banner" class="row text-center">
