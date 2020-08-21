@@ -112,7 +112,7 @@
                             <a class="text-black nav-link d-block d-lg-none" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <p class="my-0">My Account</p>
                             </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            <div class="dropdown-menu border-0 text-right" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
                                         <a href="{% url 'add_course' %}" class="dropdown-item text-black">Store Management</a>
