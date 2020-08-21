@@ -71,10 +71,6 @@ body {
     cursor: pointer;
 }
 
-.account-page .page-footer {
-    display: none;
-}
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
