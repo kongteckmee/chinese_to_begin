@@ -151,11 +151,13 @@
     {% block content %}
     {% endblock %}
 
-    <footer class="page-footer font-small indigo bg-light">         
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="{% url 'home' %}"> CHIBegin.com</a>
-        </div>
-    </footer>
+    {% if url 'home' %}
+        <footer class="page-footer font-small indigo bg-light">         
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="{% url 'home' %}"> CHIBegin.com</a>
+            </div>
+        </footer>
+    {% endif %}
 
     {% block postloadjs %}
     {% endblock %}
