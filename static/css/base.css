@@ -151,7 +151,7 @@ body {
 /* Pad the top on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 130px;
+        padding-top: 60px;
     }
 
     .body {
@@ -159,15 +159,15 @@ body {
     }
 
     h1.logo-font {
-        font-size: 18px;
+        font-size: 30px;
     }
 
     i.fa, .text-desc {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .sign-up-now-button {
-        font-size: 10px;
+        font-size: 20px;
         min-width: 150px;
     }
 }
