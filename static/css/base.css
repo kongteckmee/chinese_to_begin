@@ -170,4 +170,9 @@ body {
         font-size: 20px;
         min-width: 150px;
     }
+
+    iframe {
+        width: 90%;
+        height: 90%;
+    }
 }
