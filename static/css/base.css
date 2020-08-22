@@ -133,7 +133,7 @@ body {
 	color: #17a2b8; /* text-info */
 }
 
-/* fixed top navbar only on medium and up */
+/* fixed top bar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -156,5 +156,18 @@ body {
 
     .body {
         height: calc(100vh-50px);
+    }
+
+    .logo-font.text-blue, .logo-font.text-danger {
+        font-size: 2rem;
+    }
+
+    i.fa, .text-desc {
+        font-size: 1rem;
+    }
+
+    .sign-up-now-button {
+        font-size: 2rem;
+        min-width: 150px;
     }
 }
