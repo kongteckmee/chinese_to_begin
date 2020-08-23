@@ -5,19 +5,19 @@
     <div class="container">
         {% for store in store %}
             <div class="row mb-5 border border-4 border-light rounded-lg bg-light shadow">
-                <div class="col-3 col-md-2 ml-5 my-auto">
+                <div class="col-11 col-md-2 ml-5 my-auto">
                     <img src="{{ MEDIA_URL }}{{ store.image }}" alt="{{ store.name }}">
                 </div>
-                <div class="col-6 col-md-7 my-auto">
+                <div class="col-11 col-md-7 my-auto">
                     <h1 class="logo-font text-blue mt-5 mb-3">
                         {{ store.name }}
                     </h1>     
-                    <h5><i class="fa fa-check text-danger pr-2" aria-hidden="true"></i> {{ store.description_1 }}</h5>
-                    <h5><i class="fa fa-check text-danger pr-2" aria-hidden="true"></i> {{ store.description_2 }}</h5>
-                    <h5><i class="fa fa-check text-danger pr-2" aria-hidden="true"></i> {{ store.description_3 }}</h5>
-                    <h5><i class="fa fa-check text-danger mb-5 pr-2" aria-hidden="true"></i> {{ store.description_4 }}</h5>
+                    <h5 class="text-desc"><i class="fa fa-check text-danger pr-2" aria-hidden="true"></i> {{ store.description_1 }}</h5>
+                    <h5 class="text-desc"><i class="fa fa-check text-danger pr-2" aria-hidden="true"></i> {{ store.description_2 }}</h5>
+                    <h5 class="text-desc"><i class="fa fa-check text-danger pr-2" aria-hidden="true"></i> {{ store.description_3 }}</h5>
+                    <h5 class="text-desc"><i class="fa fa-check text-danger mb-5 pr-2" aria-hidden="true"></i> {{ store.description_4 }}</h5>
                 </div>                
-                <div class="col-2 col-md-2 my-auto">
+                <div class="col-11 col-md-2 my-auto">
                     <h3 class="mx-auto"><s>$ {{ store.before_discount }}</s></h3>
                     <h1 class="logo-font text-danger mx-auto">$ {{ store.price }}</h1>
                     {% if request.user.is_superuser %}
