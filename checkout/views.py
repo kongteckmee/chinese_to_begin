@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.contrib import messages
 from django.conf import settings
 
 from .forms import OrderForm
@@ -44,9 +43,6 @@ def checkout(request):
 
             request.session['save_info'] = 'save_info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
-        else:
-            messages.error(request, 'There was an error with your form. \
-                Please double check your information.')
     else:
         store_id = request.GET["store_id"]
         store = get_object_or_404(Store, pk=store_id)
@@ -57,7 +53,7 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Attempt to prefill the form with any info the user maintains in their profile
+        # Prefill the form with any info of user maintains in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
