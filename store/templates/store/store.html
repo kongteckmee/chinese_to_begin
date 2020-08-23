@@ -8,7 +8,7 @@
                 <div class="col-11 col-md-2 d-sm-none d-md-block d-none d-sm-block ml-5 my-auto">
                     <img src="{{ MEDIA_URL }}{{ store.image }}" alt="{{ store.name }}">
                 </div>
-                <div class="col-8 col-md-7 my-auto">
+                <div class="col-7 col-md-7 my-auto">
                     <h1 class="logo-font text-blue mt-4 mb-3 ml-1">
                         {{ store.name }}
                     </h1>     
@@ -17,14 +17,13 @@
                     <h5 class="text-desc"><i class="fa fa-check text-danger ml-1 pr-2" aria-hidden="true"></i> {{ store.description_3 }}</h5>
                     <h5 class="text-desc"><i class="fa fa-check text-danger ml-1 mb-4 pr-2" aria-hidden="true"></i> {{ store.description_4 }}</h5>
                 </div>                
-                <div class="col-3 col-md-2 mr-2 my-auto">
+                <div class="col-4 col-md-2 mr-2 my-auto">
                     <h3 class="mx-auto"><s>$ {{ store.before_discount }}</s></h3>
                     <h1 class="logo-font text-danger mx-auto">$ {{ store.price }}</h1>
                     {% if request.user.is_superuser %}
-                        <small class="ml-2">
+                        <small class="ml-3">
                             <a href="{% url 'edit_course' store.id %}">Edit</a> |
-                            <a class="d-sm-none d-md-block d-none d-sm-block text-danger" href="{% url 'delete_course' store.id %}">Delete</a>
-                            <a class="d-block d-lg-none text-danger" href="{% url 'delete_course' store.id %}">Del</a>
+                            <a class="text-danger" href="{% url 'delete_course' store.id %}">Delete</a>
                         </small>
                     {% endif %}
                     <h6 class="py-2">
