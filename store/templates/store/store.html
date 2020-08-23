@@ -23,7 +23,8 @@
                     {% if request.user.is_superuser %}
                         <small>
                             <a href="{% url 'edit_course' store.id %}">Edit</a> |
-                            <a class="text-danger" href="{% url 'delete_course' store.id %}">Delete</a>
+                            <a class="d-sm-none d-md-block d-none d-sm-block text-danger" href="{% url 'delete_course' store.id %}">Delete</a>
+                            <a class="d-block d-lg-none text-danger" href="{% url 'delete_course' store.id %}">Del</a>
                         </small>
                     {% endif %}
                     <h6 class="py-2">
