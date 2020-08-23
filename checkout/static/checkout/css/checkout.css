@@ -1,4 +1,5 @@
-.StripeElement, .stripe-style-input {
+.StripeElement,
+.stripe-style-input {
   box-sizing: border-box;
   height: 40px;
   padding: 10px 12px;
@@ -10,7 +11,9 @@
   transition: box-shadow 150ms ease;
 }
 
-.StripeElement--focus, .stripe-style-input:focus, .stripe-style-input:active {
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
   box-shadow: 0 1px 3px 0 #cfd7df;
 }
 
@@ -19,25 +22,26 @@
 }
 
 .stripe-style-input::placeholder {
-    color: #aab7c4;
+  color: #aab7c4;
 }
 
 .fieldset-label {
-    position: relative;
-    right: .5rem;
+  position: relative;
+  right: 0.5rem;
 }
 
-#card-element, .form-control {
-    color: #303030;
-    border: 1px solid #303030;
+#card-element,
+.form-control {
+  color: #303030;
+  border: 1px solid #303030;
 }
 
 select,
 select option {
-    color: #000;
+  color: #000;
 }
 
 select:invalid,
 select option[value=""] {
-    color: #aab7c4 !important
+  color: #aab7c4 !important;
 }

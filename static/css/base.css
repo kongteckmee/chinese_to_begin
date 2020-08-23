@@ -4,7 +4,6 @@ html {
 
 body {
     background-color: #bfc9ca;
-    /* height: calc(180vh - 130px); */
     color: #555555;
     font-family: 'Merriweather', serif;
 }
@@ -133,8 +132,12 @@ body {
 	color: #17a2b8; /* text-info */
 }
 
-/* fixed top bar only on medium and up */
+/* Medium and up size device */
 @media (min-width: 992px) {
+    body {
+        height: 1600px;
+    }
+
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -148,14 +151,14 @@ body {
     }
 }
 
-/* Pad the top on mobile */
+/* Mobile size device*/
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 80px;
-    }
-
     .body {
         height: calc(100vh-50px);
+    }
+
+    .header-container {
+        padding-top: 80px;
     }
 
     h1.logo-font, h3 {
