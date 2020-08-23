@@ -11,7 +11,7 @@
 
 {% if user.emailaddress_set.all %}
 <p>
-  {% trans 'The following e-mail addresses are associated with your account:' %}
+  {% blocktrans %}The following e-mail addresses are associated with your account: {% endblocktrans %}
 </p>
 
 <form action="{% url 'account_email' %}" class="email_list" method="post">
@@ -49,14 +49,14 @@
 
 {% else %}
 <p>
-  <strong>{% trans 'Warning:'%}</strong> {% trans "You currently do not have any
+  <strong>{% trans 'Warning:'%}</strong>{% blocktrans %}You currently do not have any
   e-mail address set up. You should really add an e-mail address so you can
-  receive notifications, reset your password, etc." %}
+  receive notifications, reset your password, etc.{% endblocktrans %}
 </p>
 
 {% endif %}
 
-<h2>{% trans "Add E-mail Address" %}</h2>
+<h2>{% blocktrans %}Add E-mail Address{% endblocktrans %}</h2>
 
 <form method="post" action="{% url 'account_email' %}" class="add_email">
   {% csrf_token %} {{ form|crispy }}
