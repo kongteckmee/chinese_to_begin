@@ -8,10 +8,8 @@ from .models import Store
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 
-
 import stripe
 
-# Create your views here.
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -89,6 +87,7 @@ def checkout(request):
 
     return render(request, template, context)
 
+
 def checkout_success(request, order_number):
     """
     Handle successful checkouts
@@ -116,10 +115,6 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-
-    # messages.success(request, f'Order successfully processed! \
-    #     Your order number is {order_number}. A confirmation \
-    #     email will be sent to {order.email}.')
 
     template = 'checkout/checkout_success.html'
     context = {

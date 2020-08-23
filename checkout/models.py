@@ -2,15 +2,12 @@ import uuid
 
 from django.db import models
 from django.db.models import Sum
-from django.conf import settings
 
 from django_countries.fields import CountryField
 
 from store.models import Store
 from profiles.models import UserProfile
 
-
-# Create your models here.
 
 class Order(models.Model):
     order_number = models.CharField(max_length=32, editable=False)
@@ -28,7 +25,6 @@ class Order(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     order_total = models.DecimalField(max_digits=6, decimal_places=0, default=0)
 
-
     def _generate_order_number(self):
         """
         Generate a random, unique order number using uuid
@@ -42,7 +38,6 @@ class Order(models.Model):
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
         self.save()
 
-
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the order number
@@ -52,7 +47,6 @@ class Order(models.Model):
             self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
 
-
     def __str__(self):
         return self.order_number
 
@@ -61,7 +55,6 @@ class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     store = models.ForeignKey(Store, null=False, blank=False, on_delete=models.CASCADE)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=0, null=False, blank=False, editable=False)
-
 
     def save(self, *args, **kwargs):
         """
