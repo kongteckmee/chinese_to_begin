@@ -135,10 +135,6 @@ body {
 
 /* Medium and up size device */
 @media (min-width: 992px) {
-  body {
-    height: 1600px;
-  }
-
   .fixed-top-desktop-only {
     position: fixed;
     top: 0;
