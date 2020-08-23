@@ -151,7 +151,7 @@ body {
 /* Pad the top on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 120px;
+        padding-top: 80px;
     }
 
     .body {
