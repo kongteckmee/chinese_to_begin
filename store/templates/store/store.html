@@ -17,7 +17,7 @@
                     <h5 class="text-desc"><i class="fa fa-check text-danger ml-1 pr-2" aria-hidden="true"></i> {{ store.description_3 }}</h5>
                     <h5 class="text-desc"><i class="fa fa-check text-danger ml-1 mb-4 pr-2" aria-hidden="true"></i> {{ store.description_4 }}</h5>
                 </div>                
-                <div class="col-4 col-md-2 mr-2 my-auto">
+                <div class="col-3 col-md-2 mr-2 my-auto">
                     <h3 class="mx-auto"><s>$ {{ store.before_discount }}</s></h3>
                     <h1 class="logo-font text-danger mx-auto">$ {{ store.price }}</h1>
                     {% if request.user.is_superuser %}
