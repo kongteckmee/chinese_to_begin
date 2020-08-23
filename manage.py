@@ -5,7 +5,8 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chinese_to_begin.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                          'chinese_to_begin.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
