@@ -21,7 +21,7 @@
                     <h3 class="mx-auto"><s>$ {{ store.before_discount }}</s></h3>
                     <h1 class="logo-font text-danger mx-auto">$ {{ store.price }}</h1>
                     {% if request.user.is_superuser %}
-                        <small class="ml-3">
+                        <small>
                             <a href="{% url 'edit_course' store.id %}">Edit</a> |
                             <a class="text-danger" href="{% url 'delete_course' store.id %}">Delete</a>
                         </small>
