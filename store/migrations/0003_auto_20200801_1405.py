@@ -14,23 +14,19 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Category',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True,
-                                        serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=50)),
             ],
         ),
         migrations.AddField(
             model_name='store',
             name='before_discount',
-            field=models.DecimalField(decimal_places=0, default=1,
-                                      max_digits=6),
+            field=models.DecimalField(decimal_places=0, default=1, max_digits=6),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='store',
             name='category',
-            field=models.ForeignKey(blank=True, null=True,
-                                    on_delete=django.db.models.deletion.SET_NULL,
-                                    to='store.Category'),
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='store.Category'),
         ),
     ]
