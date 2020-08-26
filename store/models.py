@@ -11,9 +11,7 @@ class Category(models.Model):
 
 
 class Store(models.Model):
-    category = models.ForeignKey(
-        'Category', null=True, blank=True, on_delete=models.SET_NULL
-    )
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=20, null=False, blank=False)
     name = models.CharField(max_length=254)
     description_1 = models.TextField()
