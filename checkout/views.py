@@ -41,8 +41,7 @@ def checkout(request):
             order_line_item.save()
 
             request.session['save_info'] = 'save_info' in request.POST
-            return redirect(reverse('checkout_success',
-                                    args=[order.order_number]))
+            return redirect(reverse('checkout_success', args=[order.order_number]))
     else:
         store_id = request.GET["store_id"]
         store = get_object_or_404(Store, pk=store_id)
