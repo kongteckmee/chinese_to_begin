@@ -34,7 +34,6 @@ def checkout(request):
         if order_form.is_valid():
             order = order_form.save()
 
-            # store = store_id
             order_line_item = OrderLineItem(
                 order=order,
                 store=store,
