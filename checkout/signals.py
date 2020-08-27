@@ -7,7 +7,7 @@ from .models import OrderLineItem
 @receiver(post_save, sender=OrderLineItem)
 def update_on_save(sender, instance, created, **kwagrs):
     """
-    Update order total on LineItem create
+    Update order total on creating LineItem
     """
     instance.order.update_total()
 
@@ -15,6 +15,6 @@ def update_on_save(sender, instance, created, **kwagrs):
 @receiver(post_delete, sender=OrderLineItem)
 def update_on_delete(sender, instance, **kwagrs):
     """
-    Update order total on LineItem delete
+    Update order total on deleting LineItem
     """
     instance.order.update_total()

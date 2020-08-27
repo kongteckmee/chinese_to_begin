@@ -6,7 +6,9 @@ from .forms import CourseForm
 
 
 def all_courses(request):
-    """ A view to show all courses """
+    """ 
+    A view to show all courses
+    """
     store = Store.objects.all()
     context = {
         'store': store,
@@ -15,7 +17,9 @@ def all_courses(request):
 
 
 def course_detail(request, store_id):
-    """ A view to show individual course details """
+    """
+    A view to show selected course details
+    """
     store = get_object_or_404(Store, pk=store_id)
     context = {
         'store': store,
@@ -25,7 +29,9 @@ def course_detail(request, store_id):
 
 @login_required
 def add_course(request):
-    """Add a course to the store"""
+    """
+    Add a course to the store
+    """
     if not request.user.is_superuser:
         return redirect(reverse('home'))
 
@@ -46,7 +52,9 @@ def add_course(request):
 
 @login_required
 def edit_course(request, store_id):
-    """Edit a course in the store"""
+    """
+    Edit a course in the store
+    """
     if not request.user.is_superuser:
         return redirect(reverse('home'))
 
@@ -70,7 +78,9 @@ def edit_course(request, store_id):
 
 @login_required
 def delete_course(request, store_id):
-    """Delete a course from the store"""
+    """
+    Delete a course from the store
+    """
     if not request.user.is_superuser:
         return redirect(reverse('home'))
 

@@ -30,7 +30,7 @@ def checkout(request):
             'postcode': request.POST.get('postcode'),
         }
         order_form = OrderForm(form_data)
-
+        # Save the order
         if order_form.is_valid():
             order = order_form.save()
 
@@ -52,7 +52,7 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Prefill the form with any info of user maintains in their profile
+        # The info of the user that maintains in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)

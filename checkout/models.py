@@ -26,21 +26,20 @@ class Order(models.Model):
 
     def _generate_order_number(self):
         """
-        Generate a random, unique order number using uuid
+        Generate a unique order number using uuid
         """
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
         """
-        Update line item total
+        Update order total
         """
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
         self.save()
 
     def save(self, *args, **kwargs):
         """
-        Override the original save method to set the order number
-        if it hasn't been set already
+        Override the original data to set the order number
         """
         if not self.order_number:
             self.order_number = self._generate_order_number()
@@ -57,8 +56,7 @@ class OrderLineItem(models.Model):
 
     def save(self, *args, **kwargs):
         """
-        Override the original save method to set the lineitem total
-        and update the order total.
+        Override the original data to update the order total
         """
         self.lineitem_total = self.store.price
         super().save(*args, **kwargs)

@@ -8,8 +8,8 @@ from django_countries.fields import CountryField
 
 class UserProfile(models.Model):
     """
-    A user profile model for maintaining default
-    information and order history
+    Maintain the default information for a user 
+    and their order history
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     default_phone_number = models.CharField(max_length=20, null=True, blank=True)
@@ -31,5 +31,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
     if created:
         UserProfile.objects.create(user=instance)
-    # Existing user: Save the profile
+    """
+    Save the profile for existing user
+    """
     instance.userprofile.save()
