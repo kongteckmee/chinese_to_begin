@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Store, Category
+from .models import Store, Condition
 
 
 class StoreAdmin(admin.ModelAdmin):
@@ -18,11 +18,11 @@ class StoreAdmin(admin.ModelAdmin):
     ordering = ('sku',)
 
 
-class CategoryAdmin(admin.ModelAdmin):
+class ConditionAdmin(admin.ModelAdmin):
     list_display = (
         'name',
     )
 
 
 admin.site.register(Store, StoreAdmin)
-admin.site.register(Category, CategoryAdmin)
+admin.site.register(Condition, ConditionAdmin)

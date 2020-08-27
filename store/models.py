@@ -1,9 +1,7 @@
 from django.db import models
 
 
-class Category(models.Model):
-    class Meta:
-        verbose_name_plural = 'Categories'
+class Condition(models.Model):
     name = models.CharField(max_length=50)
 
     def __str__(self):
@@ -11,7 +9,7 @@ class Category(models.Model):
 
 
 class Store(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    condition = models.ForeignKey('Condition', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=20, null=False, blank=False)
     name = models.CharField(max_length=254)
     description_1 = models.TextField()

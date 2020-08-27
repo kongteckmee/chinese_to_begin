@@ -11,7 +11,7 @@
             "description_4": "Lifetime Access",
             "before_discount": 120,
             "price": 100,
-            "category": 1,
+            "condition": 1,
             "image": "c-1-beginner.png"
         }
     },
@@ -27,7 +27,7 @@
             "description_4": "Lifetime Access",
             "before_discount": 140,
             "price": 120,
-            "category": 1,
+            "condition": 1,
             "image": "c-2-intermediate.png"
         }
     },
@@ -43,7 +43,7 @@
             "description_4": "Lifetime Access",
             "before_discount": 170,
             "price": 150,
-            "category": 1,
+            "condition": 1,
             "image": "c-3-advanced.png"
         }
     },
@@ -59,7 +59,7 @@
             "description_4": "Lifetime Access",
             "before_discount": 140,
             "price": 120,
-            "category": 1,
+            "condition": 1,
             "image": "c-4-pinyin.png"
         }
     },
@@ -75,7 +75,7 @@
             "description_4": "Lifetime Access",
             "before_discount": 140,
             "price": 120,
-            "category": 1,
+            "condition": 1,
             "image": "c-5-character.png"
         }
     },
@@ -91,7 +91,7 @@
             "description_4": "Lifetime Access",
             "before_discount": 600,
             "price": 500,
-            "category": 2,
+            "condition": 2,
             "image": "c-6-bundle.png"
         }
     }

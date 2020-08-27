@@ -1,0 +1,16 @@
+[
+    {
+        "pk": 1,
+        "model": "store.condition",
+        "fields": {
+            "name": "Exist"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "store.condition",
+        "fields": {
+            "name": "Archive"
+        }
+    }
+]
