@@ -55,6 +55,18 @@
                 <img src="{{ MEDIA_URL }}h-3-workflow.png" alt="One-Step">
             </div>
         </div>
+        <div class="row mb-5 border border-4 border-light rounded-lg bg-secondary shadow">
+            <div class="col-10 col-sm-11 col-md-9 ml-5 mt-4 mb-4">
+                <h1 class="logo-font text-blue text-warning mb-3">
+                    Contact Us Today!
+                </h1>     
+                <form method="POST" novalidate>
+                    {% csrf_token %}
+                    {{ contact_form|crispy }}
+                    <input type="submit" value="Send" name="contact-form" class="btn--white">
+                </form>
+            </div>
+        </div>
     </div>
     <div class="btt-button shadow-sm rounded-2 border border-black border-4 bg-dark">
         <a class="btt-link d-flex h-100">
