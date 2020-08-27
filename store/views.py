@@ -7,11 +7,10 @@ from .forms import CourseForm
 
 def all_courses(request):
     """ A view to show all courses """
-    if Condition == 1:
-        store = Store.objects.all()
-        context = {
-            'store': store,
-        }
+    store = Store.objects.all()
+    context = {
+        'store': store,
+    }
     return render(request, 'store/store.html', context)
 
 
