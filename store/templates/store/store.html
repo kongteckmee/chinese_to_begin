@@ -6,7 +6,7 @@
     <div class="container">
         {% for store in store %}
             <!-- Available courses in the store -->
-            {% if store.condition is 'Exist' %}
+            {% if store.condition.name is 'Exist' %}
                 <div class="row mb-5 border border-4 border-light rounded-lg bg-light shadow">
                     <div class="col-11 col-md-2 d-sm-none d-md-block d-none d-sm-block ml-5 my-auto">
                         <img src="{{ MEDIA_URL }}{{ store.image }}" alt="{{ store.name }}">
