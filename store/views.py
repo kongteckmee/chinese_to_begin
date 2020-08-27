@@ -7,7 +7,7 @@ from .forms import CourseForm
 
 def all_courses(request):
     """ A view to show all courses """
-    if Condition == 'Exist':
+    if Condition.name == 'Exist':
         store = Store.objects.all()
         context = {
             'store': store,
