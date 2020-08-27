@@ -62,8 +62,8 @@
                 </h1>     
                 <form method="POST" novalidate>
                     {% csrf_token %}
-                    {{ contact_form|crispy }}
-                    <input type="submit" value="Send" name="contact-form" class="btn--white">
+                    {{ form | crispy }}
+                    <button class="btn btn-dark rounded-0 text-light" type="submit">Send</button>
                 </form>
             </div>
         </div>
