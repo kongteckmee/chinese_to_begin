@@ -4,7 +4,8 @@
 
 {% block content %}
     <div class="container">
-        {% for store in store if condition in ['Exist'] %}
+        {% for store in store %}
+            {% if condition in store == '1' %}
                 <div class="row mb-5 border border-4 border-light rounded-lg bg-light shadow">
                     <div class="col-11 col-md-2 d-sm-none d-md-block d-none d-sm-block ml-5 my-auto">
                         <img src="{{ MEDIA_URL }}{{ store.image }}" alt="{{ store.name }}">
@@ -32,7 +33,7 @@
                         </h6>
                     </div>                
                 </div>
-            <!-- {% endif %} -->
+            {% endif %}
         {% endfor %}
     </div>
     <div class="btt-button shadow-sm rounded-2 border border-black border-4 bg-dark">
