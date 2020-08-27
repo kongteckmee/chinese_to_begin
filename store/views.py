@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Store
+from .models import Store, Condition
 from django.contrib.auth.decorators import login_required
 
 from .forms import CourseForm
@@ -7,10 +7,11 @@ from .forms import CourseForm
 
 def all_courses(request):
     """ A view to show all courses """
-    store = Store.objects.all()
-    context = {
-        'store': store,
-    }
+    if Condition == 'Exist':
+        store = Store.objects.all()
+        context = {
+            'store': store,
+        }
     return render(request, 'store/store.html', context)
 
 
