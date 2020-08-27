@@ -3,20 +3,14 @@ from .forms import ContactForm
 
 
 def index(request):
-    """ A view to return the index page """
-    return render(request, 'home/index.html')
-
-
-def contact(request):
-    """Initialize the contact form"""
     form = ContactForm()
 
-    if 'contact-form' in request.POST:
+    if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
 
-            return redirect('index')
+            return redirect('home')
 
     context = {"form": form, }
 
