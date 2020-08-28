@@ -121,8 +121,40 @@ The function of the current contact form only to record the details sent by the 
 There will be the needs of a user review section in the website. This section can serve as an encouragement to the user on how the other registered student feel after gone through the course.
 
 ### Technologies Used
+#### Languages
+- [HTML](https://en.wikipedia.org/wiki/HTML) for the frontend development.
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) used to style the HTML.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for the dynamic programming on user interactions.
+- [Python3](https://www.python.org/download/releases/3.0/) used for all the backend development.
+
+#### Frameworks and Libraries
+- [Django](https://www.djangoproject.com/) is used to implement the high-level Python framework for the development of the backend.
+- [Bootstrap v4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/) is used to provide the CSS framework. 
+- [FontAwesome](https://fontawesome.com/) is used to provide the icons throughout the website.
+- [GoogleFonts](https://fonts.google.com/) is used to provide the font styling to the website.
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) is used as a template language to implement the logic at the frontend.
+- [JQuery](https://jquery.com/) is used with the JavaScript for the DOM manipulation.
+
+#### Tools
+- [Git](https://git-scm.com/) is used for version control.
+- [GitHub](https://github.com/) is used store and manage the repository of this project.
+- [GitPod](https://www.gitpod.io/) is used to create this project.
+- [Heroku] (https://heroku.com/) is used to host the deployed version of the website.
+- [AWS S3 Buckets](https://aws.amazon.com/s3/) is used to host the static and media folders.
+- [SQlite3](https://www.sqlite.org/index.html) is the database provided by Django during the development.
+- [PostgreSQL](https://www.postgresql.org/) is the database that works on Heroku after the deployment.
+- [Stripe](https://stripe.com/) is used to handle the online payment transaction.
+- [Gmail](https://mail.google.com/) is used to send the automatic generated email to a user upon new account registration.
+- [Balsamiq](https://balsamiq.com/) is used to used to design and create the wireframes before starting this project.
+- [flaticon](https://www.flaticon.com/) is used to get the image for the website and the icon at the browser tab in .png format.
+- [onelineconvertfree](https://onlineconvertfree.com/convert-format/png-to-ico/) is used to convert the image from .png to .ico as to use the icon at the browser tab.
 
 ## Testing
+
+<details>
+	<summary>Testing</summary>
+</details>
+
 ### Known Issues
 
 ## Deployment
