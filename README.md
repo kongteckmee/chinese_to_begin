@@ -8,6 +8,34 @@ This is a language learning institute website that promote their Chinese teachin
 
 The deployed website can be found at here: **[CHIBegin](https://chinese-to-begin.herokuapp.com/)**
 
+## Table Of Contents
+
+1. [UX](#ux)
+	- [User Stories](#user-stories)
+	- [Design](#design)
+	- [Wireframes](#wireframes)
+
+2. [Features](#features)
+	- [Existing Features](#existing-features)
+	- [Future Features](#future-features)
+
+3. [Technologies Used](#technologies-used)
+	- [Languages](#languages)
+	- [Frameworks & Libraries](#frameworks-and-libraries)
+	- [Tools](#tools)
+
+4. [Testing](#testing)
+	- [Known Issues](#known-issues)
+
+5. [Deployment](#deployment)
+	- [Local Deployment](#local-deployment)
+	- [Deployment To Heroku](#deployment-to-heroku)
+
+6. [Credits](#credits)
+	- [Content](#content)
+	- [Media](#media)
+	- [Acknowledgements](#acknowledgements)
+
 ## UX
 This website can be split into 2 sections:
 1. The normal user section - They can navigate to normal user section only, such as to view the information at the website, to register a course, to manage their own profile, to view their order history, and to contact the website admin.
@@ -158,6 +186,9 @@ There will be the needs of a user review section in the website. This section ca
 ### Known Issues
 
 ## Deployment
+
+### Local Deployment
+### Deployment to Heroku
 
 ## Credits
 ### Content
