@@ -2,7 +2,7 @@
 
 ###### Code Institute / Full Stack Frameworks With Django
 
-ChiBegin is a Chinese institute website built by using Pythons Django framework and hosted by using Heroku.
+ChiBegin is a Chinese Institute website built by using Pythons Django framework and hosted by using Heroku.
 
 This is a language learning institute website that promote their Chinese teaching to the language learner. The interested one can register the course by purchasing the course at the website. They can view their order history at their own profile page. They can also contacting the website admin to have more queries on the course or the institute itself.
 
@@ -61,12 +61,73 @@ The wireframes were created at the beginning of the project by using **[balsamiq
 
 ## Features
 
-### Current features
+### Existing Features
 #### Home
-#### Tips of Learning
-#### Store
-#### About
-#### User Registration
-#### User Login
+This is the introduction page at the website and is designed to give the users an insight on what to expect once they have registered the course. There is a Sign Up Now button that will link the user directly to all the available courses at the store.
 
-### Future features
+#### Contact
+A contact form is available at the bottom of the Home page, in order to to let the users to contact the website admin for any enquiry. The website admin can view all the details from the contact form at the admin backend page.
+
+#### Tips of Learning
+This is the tips of Chinese language learning page that given in YouTube video format, which consisted majority on how the foreigners interested in Chinese language and how they learn Chinese. The purpose of this page also to give the encouragement to the non-Chinese speaker to learn Chinese.
+
+#### Store
+The store page shows the available courses in this institute to be registered by the users. Once the user selected on the desired course, the select button will link the user to the course detail page to proceed to checkout. No shopping cart is required as only one course to be purchased at a time.
+
+Besides, the super user will be able to edit and delete a course in this page if something need to be changed on a certain course.
+
+#### Checkout with Stripe Payment Transaction
+At the checkout page, if the user has not registered as a new user, they will need to fill out the user's detail form before completing the order. If the user has a registered profile, their information will be saved upon the checkout if the option is chosen.
+
+The user will need to fill out the details of their payment card in order to create the Stripe payment transaction at the backend. If this field is not being filled correctly, an error message will be shown so the user can have it corrected. A successful payment will link the user to a course registration confirmation page, together with the order details.
+
+#### About
+The about page consisted of about the institute, the goal and the present team that have raised the online business teaching.
+
+#### New User Registration
+The users can register an account from the website. No restriction given on who to register an account. The user must provide unique username and email address as it will be checked against the existing entries upon the registration. A unique password, not to be same as the username or email address will be needed, which must be entered twice to check if it is inputted correctly.
+
+If each of the fields are not being filled correctly, or same data being detected, the website will give an error message so they can have it corrected.
+
+#### User Login
+The user login page requires a username and password to proceed. There is a link to reset the password for who have forgotten the password. Once the user click on 'Forgot Password?' link, the website will request them to provide an email address that has been registered to the institute. If a match is found, they will receive an email with a link that allowing them to create a new password.
+
+#### User Profile
+The users are encouraged to register an account at the website as their information will be saved for further used especially when dealing with the course registration. Furthermore, any of the orders made will be recorded in their own profile page. This will ease the user to check back their previous orders.
+
+#### Store Management
+The store owner are able to add a new course at store management page.
+
+#### Admin Backend Management
+This is the Django admin page that been customized in order to ease the admin managament. The admin will be able to see the further details at this section, such as the details of the registered users plus their email address, all the orders, courses and the contact detail for any of the enquiries.
+
+#### Navigation Bar
+The navigation bar allows the user to navigate between the different pages at the website.
+
+#### Scroll to Top Button
+The Scroll to Top button allows the user to move to the top of the page whenever they scrolling on a certain page.
+
+#### Footer
+The footer contain a short line of text for copyright notice for Chinese to Begin.
+
+### Future Features
+#### Archive the Old Course
+There will be happened the course not available after some while. Thus, I have prepared a model named 'Condition' to record the course as existing or archiving. It will be my future feature to only show the existing course at the Store page.
+
+#### Link the Contact Form to Admin Email
+The function of the current contact form only to record the details sent by the user in the admin backend management page. I planned to link the contact form to the admin email in the future so they can reply the user directly from the email itself.
+
+#### User Reviews
+There will be the needs of a user review section in the website. This section can serve as an encouragement to the user on how the other registered student feel after gone through the course.
+
+### Technologies Used
+
+## Testing
+### Known Issues
+
+## Deployment
+
+## Credits
+### Content
+### Media
+### Acknowledgements
