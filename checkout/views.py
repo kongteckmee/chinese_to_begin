@@ -11,6 +11,9 @@ import stripe
 
 
 def checkout(request):
+    """
+    Handle the order checkout
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 

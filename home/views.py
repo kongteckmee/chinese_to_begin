@@ -3,6 +3,9 @@ from .forms import ContactForm
 
 
 def index(request):
+    """
+    Handle the contact form
+    """
     form = ContactForm()
 
     if request.method == "POST":

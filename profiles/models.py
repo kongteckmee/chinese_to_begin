@@ -8,7 +8,7 @@ from django_countries.fields import CountryField
 
 class UserProfile(models.Model):
     """
-    Maintain the default information for a user 
+    Maintain the default information for the user
     and their order history
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)

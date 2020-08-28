@@ -4,7 +4,7 @@ from .models import Contact
 
 class ContactForm(forms.ModelForm):
     """
-    Contact form to collect the user's enquiry
+    Collect the user's enquiry using the contact form
     """
     class Meta:
         model = Contact
