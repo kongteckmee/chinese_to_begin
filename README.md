@@ -175,7 +175,7 @@ There will be the needs of a user review section in the website. This section ca
 - [Gmail](https://mail.google.com/) is used to send the automatic generated email to a user upon new account registration.
 - [Balsamiq](https://balsamiq.com/) is used to used to design and create the wireframes before starting this project.
 - [flaticon](https://www.flaticon.com/) is used to get the image for the website and the icon at the browser tab in .png format.
-- [onelineconvertfree](https://onlineconvertfree.com/convert-format/png-to-ico/) is used to convert the image from .png to .ico as to use the icon at the browser tab.
+- [onlineconvertfree](https://onlineconvertfree.com/convert-format/png-to-ico/) is used to convert the image from .png to .ico as to use the icon at the browser tab.
 
 ## Testing
 
