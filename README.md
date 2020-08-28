@@ -1,39 +1,72 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Chinese to Begin
 
-Welcome Teck Mee_May,
+###### Code Institute / Full Stack Frameworks With Django
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+ChiBegin is a Chinese institute website built by using Pythons Django framework and hosted by using Heroku.
 
-## Gitpod Reminders
+This is a language learning institute website that promote their Chinese teaching to the language learner. The interested one can register the course by purchasing the course at the website. They can view their order history at their own profile page. They can also contacting the website admin to have more queries on the course or the institute itself.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The deployed website can be found at here: **[CHIBegin](https://chinese-to-begin.herokuapp.com/)**
 
-`python3 -m http.server`
+## UX
+This website can be split into 2 sections:
+1. The normal user section - They can navigate to normal user section only, such as to view the information at the website, to register a course, to manage their own profile, to view their order history, and to contact the website admin.
+2. The super user section - They can navigate beyond than a normal user, such as to manage the store, add, update and delete the course.
 
-A blue button should appear to click: *Make Public*,
+The design of the website is more on simplistic yet appeared to be eye catchy and easy to be navigated. The navigation bar is sticked on top so that the user could easily navigate despite of the scroll location. Scroll to top button also provided to ease the user back to the top of certain page. The used of colors are random but suit to the theme of the website.
 
-Another blue button should appear to click: *Open Browser*.
+### User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<img src="media/user_stories/user-stories.JPG" align=top width=1000>
 
-A blue button should appear to click: *Make Public*,
+### Design
 
-Another blue button should appear to click: *Open Browser*.
+#### Application Framework
+Django framework is used in the website.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+#### Database
+The sqlite3 database was used during the development. The PostgreSQL database was used when the website deployed to Heroku.
 
-## Updates Since The Instructional Video
+Besides the normal e-commerce website models, such as the model of Store, UserProfile, Order and OrderLineItem, I have added 2 more models, that are Condition and Contact for future features. Condition model was added to indicate the existing or archive courses in the store so we can only show the existing courses to the user. While the Contact model was added to let the user to contact the website admin for any enquiry on the courses.
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+<img src="media/models/models.png" align=top width=800>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+#### CSS Framework
+Bootstrap v4.5 framwork was used in the website.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### Icon
+Font Awesome 5 was used throughout the project, across all the pages.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#### Typography
+Only 1 type of font is used throughout the website: **[Merriweather](https://fonts.google.com/specimen/Merriweather?query=Merriweather)**
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Wireframes
+The wireframes were created at the beginning of the project by using **[balsamiq](https://balsamiq.com/)**. The final website are similar to the created wireframes, yet do differ as adding some functionalities and designs to all the pages.
 
---------
+#### Desktop & Tablet View
+##### [Home] | [Tips of Learning] | [Store] | [About] | [My Account]
+<img src="media/wireframe/index_d_t.png" align=top width=200>&nbsp;
+<img src="media/wireframe/tips_of_learning_d_t.png" align=top width=200>&nbsp;
+<img src="media/wireframe/store_d_t.png" align=top width=200>&nbsp;
+<img src="media/wireframe/about_d_t.png" align=top width=200>&nbsp;
+<img src="media/wireframe/signin_d_t.png" align=top width=200>
 
-Happy coding!
+#### Mobile View
+##### [Home] | [Tips of Learning] | [Store] | [About] | [My Account]
+<img src="media/wireframe/index_m.png" align=top width=200>&nbsp;
+<img src="media/wireframe/tips_of_learning_m.png" align=top width=200>&nbsp;
+<img src="media/wireframe/store_m.png" align=top width=200>&nbsp;
+<img src="media/wireframe/about_m.png" align=top width=200>&nbsp;
+<img src="media/wireframe/signin_m.png" align=top width=200>
+
+## Features
+
+### Current features
+#### Home
+#### Tips of Learning
+#### Store
+#### About
+#### User Registration
+#### User Login
+
+### Future features
