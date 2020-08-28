@@ -45,19 +45,19 @@ The wireframes were created at the beginning of the project by using **[balsamiq
 
 #### Desktop & Tablet View
 ##### [Home] | [Tips of Learning] | [Store] | [About] | [My Account]
-<img src="media/wireframe/index_d_t.png" align=top width=200>&nbsp;
-<img src="media/wireframe/tips_of_learning_d_t.png" align=top width=200>&nbsp;
-<img src="media/wireframe/store_d_t.png" align=top width=200>&nbsp;
-<img src="media/wireframe/about_d_t.png" align=top width=200>&nbsp;
-<img src="media/wireframe/signin_d_t.png" align=top width=200>
+<img src="media/wireframe/index_d_t.png" align=top width=160>&nbsp;
+<img src="media/wireframe/tips_of_learning_d_t.png" align=top width=160>&nbsp;
+<img src="media/wireframe/store_d_t.png" align=top width=160>&nbsp;
+<img src="media/wireframe/about_d_t.png" align=top width=160>&nbsp;
+<img src="media/wireframe/signin_d_t.png" align=top width=160>
 
 #### Mobile View
 ##### [Home] | [Tips of Learning] | [Store] | [About] | [My Account]
-<img src="media/wireframe/index_m.png" align=top width=200>&nbsp;
-<img src="media/wireframe/tips_of_learning_m.png" align=top width=200>&nbsp;
-<img src="media/wireframe/store_m.png" align=top width=200>&nbsp;
-<img src="media/wireframe/about_m.png" align=top width=200>&nbsp;
-<img src="media/wireframe/signin_m.png" align=top width=200>
+<img src="media/wireframe/index_m.png" align=top width=160>&nbsp;
+<img src="media/wireframe/tips_of_learning_m.png" align=top width=160>&nbsp;
+<img src="media/wireframe/store_m.png" align=top width=160>&nbsp;
+<img src="media/wireframe/about_m.png" align=top width=160>&nbsp;
+<img src="media/wireframe/signin_m.png" align=top width=160>
 
 ## Features
 
