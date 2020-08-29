@@ -28,6 +28,7 @@ The deployed website can be found at here: **[CHIBegin](https://chinese-to-begin
 
 5. [Deployment](#deployment)
 	- [Local Deployment](#local-deployment)
+    - [Running Code in Local](#running-code-in-local)
 	- [Deployment To Heroku](#deployment-to-heroku)
 
 6. [Credits](#credits)
