@@ -25,7 +25,6 @@ The deployed website can be found at here: **[CHIBegin](https://chinese-to-begin
 	- [Tools](#tools)
 
 4. [Testing](#testing)
-	- [Known Issues](#known-issues)
 
 5. [Deployment](#deployment)
 	- [Local Deployment](#local-deployment)
@@ -184,8 +183,26 @@ There will be the needs of a user review section in the website. This section ca
 
 ## Testing
 
+Throughout the development of this project, manual testing is implemented. The testing is simple yet effective to test on each of the function, link and the button. In the testing process, I was able to identify every issue before the deployment. This testing allow me to gone through every user story by the step of registration or order.
+
 <details>
-	<summary>Testing</summary>
+	<summary>All the testing of this project can be found by clicking here</summary>
+
+### Code Validation
+
+- [W3C Markup Validation](https://validator.w3.org/) is used to validate the code for HTML files.
+    - Some warnings and errors were reported but they are related to the jinja code and Script usage.
+- [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) is used to validate the code for CSS files.
+- [JSHint](https://jshint.com/) is used to validate the code for JS files.
+
+### Responsiveness
+
+<img src="media/testing/responsiveness.JPG" align=top width=800>
+
+### Browser Compatibility
+
+<img src="media/testing/browser-compatibility.JPG" align=top width=800>
+
 </details>
 
 ### Known Issues
