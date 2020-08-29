@@ -1,16 +1,20 @@
+/* Set the height of order history section for the scrollbar to appear if more than the max height */
 .order-history {
-    max-height: 416px; /* Height of the profile form */
+    max-height: 416px; 
     overflow-y: auto;
 }
 
+/* Normal text color */
 #profile-update-form .form-control {
     color: #000;
 }
 
+/* Placeholder text color */
 #profile-update-form input::placeholder {
     color: #aab7c4;
 }
 
+/* Set the text color in country option */
 #id_default_country,
 #id_default_country option:not(:first-child) {
     color: #000;

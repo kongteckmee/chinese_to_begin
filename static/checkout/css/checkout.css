@@ -1,3 +1,4 @@
+/* Stripe payment card details */
 .StripeElement, .stripe-style-input {
   box-sizing: border-box;
   height: 40px;
@@ -32,6 +33,7 @@
     border: 1px solid #303030;
 }
 
+/* Set the text color in country option */
 select,
 select option {
     color: #000;
