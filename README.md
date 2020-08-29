@@ -43,7 +43,7 @@ This website can be split into 2 sections:
 1. **The normal user section** - They can navigate to normal user section only, such as to view the information at the website, to register a course, to manage their own profile, to view their order history, and to contact the website admin.
 2. **The super user section** - They can navigate beyond than a normal user, such as to manage the store, add, update and delete the course.
 
-The design of the website is more on simplistic yet appeared to be eye catchy and easy to be navigated. The navigation bar is sticked on top so that the user could easily navigate despite of the scroll location. Scroll to top button also provided to ease the user back to the top of certain page. The used of colors are random but suit to the theme of the website.
+The design of the website is more on simplistic yet appeared to be eye catchy and easy to be navigated. The navigation bar is sticked on top so that the user could easily navigate despite of the scroll location. Back to top button also provided to ease the user back to the top of certain page. The used of colors are random but suit to the theme of the website.
 
 ### User Stories
 
@@ -135,8 +135,8 @@ This is the Django admin page that been customized in order to ease the admin ma
 #### Navigation Bar
 The navigation bar allows the user to navigate between the different pages at the website.
 
-#### Scroll to Top Button
-The Scroll to Top button allows the user to move to the top of the page whenever they scrolling on a certain page.
+#### Back to Top Button
+The Back to Top button allows the user to move to the top of the page whenever they scrolling on a certain page.
 
 #### Footer
 The footer contain a short line of text for copyright notice for Chinese to Begin.
@@ -193,7 +193,54 @@ There will be the needs of a user review section in the website. This section ca
 ## Deployment
 
 ### Local Deployment
+In order to deploy the project locally by using GitPod, the web browser such as Google Chrome is suggested to use the GitPod chrome extension.
+1. Add the GitPod extension at Chrome:
+    - Go to [GitPod Chrome Extension](https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki).
+    - Click on `Add to Chrome`, then click on `Add to extension`.
+2. Open the project repository by using GitPod:
+    - Go to [chinese_to_begin](https://github.com/kongteckmee/chinese_to_begin) repository.
+    - If the GitPod chrome extension is successfully added, a green `Gitpod` button will be shown at the top right corner, next to the `Code` button. Click on the `Gitpod` button.
+    - This will allow you to edit the code that originally at GitHub in GitPod.
+3. Add the environment variables at the **Settings** at GitPod workspace:
+
+Enviroment Variables|Value
+---|---
+EMAIL_HOST_PASS|`<EMAIL_HOST_PASS>`
+EMAIL_HOST_USER|`<EMAIL_HOST_USER>`
+SECRET_KEY|`<SECRET_KEY>`
+STRIPE_PUBLIC_KEY|`<STRIPE_PUBLIC_KEY>`
+STRIPE_SECRET_KEY|`<STRIPE_SECRET_KEY>`
+
+4. SQlite3 is the local database for this Django project.
+5. All the necessary dependencies that listed in **requirements.txt** file need to be downloaded in order to run this project, by running the command at the terminal `pip3 install -r requirements.text`
+6. Create a local development server by running the command `python3 manage.py runserver`.
+
 ### Deployment to Heroku
+The website is deployed at [Heroku](https://dashboard.heroku.com/apps/chinese-to-begin). These steps are applied to deploy this project:
+1. Install **gunicorn** package by using `pip3 install gunicorn` to run the website at Heroku.
+2. Install **pycopg2** by using `pip3 install psycopg2` to connect to PostgreSQL.
+3. Create **requirements.txt** file by using `pip3 freeze --local > requirements.txt`.
+4. Create a new application at Heroku:
+    - Sign up for a new Heroku account.
+    - Click on `New` and `Create new app` to create a new application.
+    - Set the name of the application and select your region and click on create app.
+5. Install PostgreSQL using `heroku addons:create heroku-postgresql:hobby-dev`.
+6. Create **Procfile** at root directory with `web: gunicorn chinese_to_begin.wsgi:application`.
+7. Add the environment variables at the **Settings**, under **Config Vars**:
+
+Enviroment Variables|Value
+---|---
+AWS_ACCESS_KEY_ID|`<AWS_ACCESS_KEY_ID>`
+AWS_SECRET_ACCESS_KEY|`<AWS_SECRET_ACCESS_KEY>`
+DATABASE_URL|`<DATABASE_URL>`
+EMAIL_HOST_PASS|`<EMAIL_HOST_PASS>`
+EMAIL_HOST_USER|`<EMAIL_HOST_USER>`
+SECRET_KEY|`<SECRET_KEY>`
+STRIPE_PUBLIC_KEY|`<STRIPE_PUBLIC_KEY>`
+STRIPE_SECRET_KEY|`<STRIPE_SECRET_KEY>`
+USE_AWS|`<True>`
+
+8. At **Deploy** tab, at the **Deployment method** section, connect Heroku by choosing **Connect GitHub** and **Enable Automatic Deployment** from the GitHub master branch to allow all new committed lines will be automatically deployed to the heroku application.
 
 ## Credits
 
