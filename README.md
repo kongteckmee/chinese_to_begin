@@ -34,12 +34,14 @@ The deployed website can be found at here: **[CHIBegin](https://chinese-to-begin
 6. [Credits](#credits)
 	- [Content](#content)
 	- [Media](#media)
+    - [Code](#code)
 	- [Acknowledgements](#acknowledgements)
 
 ## UX
+
 This website can be split into 2 sections:
-1. The normal user section - They can navigate to normal user section only, such as to view the information at the website, to register a course, to manage their own profile, to view their order history, and to contact the website admin.
-2. The super user section - They can navigate beyond than a normal user, such as to manage the store, add, update and delete the course.
+1. **The normal user section** - They can navigate to normal user section only, such as to view the information at the website, to register a course, to manage their own profile, to view their order history, and to contact the website admin.
+2. **The super user section** - They can navigate beyond than a normal user, such as to manage the store, add, update and delete the course.
 
 The design of the website is more on simplistic yet appeared to be eye catchy and easy to be navigated. The navigation bar is sticked on top so that the user could easily navigate despite of the scroll location. Scroll to top button also provided to ease the user back to the top of certain page. The used of colors are random but suit to the theme of the website.
 
@@ -69,6 +71,7 @@ Font Awesome 5 was used throughout the project, across all the pages.
 Only 1 type of font is used throughout the website: **[Merriweather](https://fonts.google.com/specimen/Merriweather?query=Merriweather)**
 
 ### Wireframes
+
 The wireframes were created at the beginning of the project by using **[balsamiq](https://balsamiq.com/)**. The final website are similar to the created wireframes, yet do differ as adding some functionalities and designs to all the pages.
 
 #### Desktop & Tablet View
@@ -149,6 +152,7 @@ The function of the current contact form only to record the details sent by the 
 There will be the needs of a user review section in the website. This section can serve as an encouragement to the user on how the other registered student feel after gone through the course.
 
 ### Technologies Used
+
 #### Languages
 - [HTML](https://en.wikipedia.org/wiki/HTML) for the frontend development.
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) used to style the HTML.
@@ -167,15 +171,16 @@ There will be the needs of a user review section in the website. This section ca
 - [Git](https://git-scm.com/) is used for version control.
 - [GitHub](https://github.com/) is used store and manage the repository of this project.
 - [GitPod](https://www.gitpod.io/) is used to create this project.
-- [Heroku] (https://heroku.com/) is used to host the deployed version of the website.
+- [Heroku](https://heroku.com/) is used to host the deployed version of the website.
 - [AWS S3 Buckets](https://aws.amazon.com/s3/) is used to host the static and media folders.
 - [SQlite3](https://www.sqlite.org/index.html) is the database provided by Django during the development.
 - [PostgreSQL](https://www.postgresql.org/) is the database that works on Heroku after the deployment.
 - [Stripe](https://stripe.com/) is used to handle the online payment transaction.
 - [Gmail](https://mail.google.com/) is used to send the automatic generated email to a user upon new account registration.
 - [Balsamiq](https://balsamiq.com/) is used to used to design and create the wireframes before starting this project.
-- [flaticon](https://www.flaticon.com/) is used to get the image for the website and the icon at the browser tab in .png format.
-- [onlineconvertfree](https://onlineconvertfree.com/convert-format/png-to-ico/) is used to convert the image from .png to .ico as to use the icon at the browser tab.
+- [Draw.io](https://drawio-app.com/) is used to design my relational database diagram. 
+- [Flaticon](https://www.flaticon.com/) is used to get the image for the website and the icon at the browser tab in .png format.
+- [Onlineconvertfree](https://onlineconvertfree.com/convert-format/png-to-ico/) is used to convert the image from .png to .ico as to use the icon at the browser tab.
 
 ## Testing
 
@@ -191,6 +196,25 @@ There will be the needs of a user review section in the website. This section ca
 ### Deployment to Heroku
 
 ## Credits
+
 ### Content
+- For the concept of this website, it is from my previous Chinese teaching idea and I got inspired by [Yoyo Chinese](https://yoyochinese.com/landing) that took me to design the website and put the majority content in a similar way, yet it is still in my own styling.
+- For the content related to 'Introduction to Chinese Language', I have used the information from [Chinasage](https://www.chinasage.info/language.htm) as they are giving a good introduction to Chinese language in a detail way.
+- For the content related to 'Reason to Learn Chinese', I have used the information from [Lindsay Does Languages Video](https://www.youtube.com/watch?v=cS1UaQvs-3E) that shared a lot of experience in her Chinese learning.
+
 ### Media
+- All the images from the 'Home', 'Tips of Learning' and 'Store' page can be found on [Flaticon](https://www.flaticon.com/).
+- All the team profile picture are from [Organic Headshots](https://www.organicheadshots.com/testimonials.html).
+- All the icons are from [Font Awesome](https://fontawesome.com/).
+- All the tips of learning from the foreigners are from [YouTube](https://www.youtube.com/) on their own YouTube subscription page.
+
+### Code
+- I referred majority of codes from [Project - Boutique Ado](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/?activate_block_id=block-v1%3ACodeInstitute%2BFSF_102%2BQ1_2020%2Btype%40sequential%2Bblock%40d3188bf68530497aa5fba55d07a9d7d7) from the lessons of [Code Institute](https://codeinstitute.net/) as I think that is the standard of an e-commerce website should have.
+- The rest of codes, I have modified it myself due to the different design from Boutique Ado.
+- I referred some of the codes from [Stack Overflow](https://stackoverflow.com/) and [Slack Community](https://slack.com/intl/en-gb/) to fix the issues during the development.
+
 ### Acknowledgements
+- Praise God that He is giving me the chance to start and also to complete this course.
+- Special thanks to [Dick Vlaanderen](https://github.com/dickvla), my mentor from Code Institute, for his patience and his valuable advice throughout this project.
+- Thanks to the entire tutor support team at Code Institute for their guidance and great feedback.
+
