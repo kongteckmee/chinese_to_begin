@@ -41,7 +41,7 @@ The deployed website can be found at here: **[CHIBegin](https://chinese-to-begin
 
 This website can be split into 2 sections:
 1. **The normal user section** - They can navigate to normal user section only, such as to view the information at the website, to register a course, to manage their own profile, to view their order history, and to contact the website admin.
-2. **The super user section** - They can navigate beyond than a normal user, such as to manage the store, add, update and delete the course.
+2. **The super user section** - They can navigate beyond than a normal user, such as to manage the store, add, edit and delete the course.
 
 The design of the website is more on simplistic yet appeared to be eye catchy and easy to be navigated. The navigation bar is sticked on top so that the user could easily navigate despite of the scroll location. Back to top button also provided to ease the user back to the top of certain page. The used of colors are random but suit to the theme of the website.
 
@@ -55,24 +55,24 @@ The design of the website is more on simplistic yet appeared to be eye catchy an
 Django framework is used in the website.
 
 #### Database
-The sqlite3 database was used during the development. The PostgreSQL database was used when the website deployed to Heroku.
+The sqlite3 database is used during the development. The PostgreSQL database is used when the website deployed to Heroku.
 
-Besides the normal e-commerce website models, such as the model of Store, UserProfile, Order and OrderLineItem, I have added 2 more models, that are Condition and Contact for future features. Condition model was added to indicate the existing or archive courses in the store so we can only show the existing courses to the user. While the Contact model was added to let the user to contact the website admin for any enquiry on the courses.
+Besides the normal e-commerce website models, such as the model of Store, UserProfile, Order and OrderLineItem, I have added 2 more models, that are Condition and Contact for future features. Condition model is added to indicate the existing or archive courses in the store so we can only show the existing courses to the user. While the Contact model is added to let the user to contact the website admin for any enquiry on the courses.
 
 <img src="media/models/models.png" align=top width=1000>
 
 #### CSS Framework
-Bootstrap v4.5 framwork was used in the website.
+Bootstrap v4.5 framwork is used in the website.
 
 #### Icon
-Font Awesome 5 was used throughout the project, across all the pages.
+Font Awesome 5 is used throughout the project, across all the pages.
 
 #### Typography
 Only 1 type of font is used throughout the website: **[Merriweather](https://fonts.google.com/specimen/Merriweather?query=Merriweather)**
 
 ### Wireframes
 
-The wireframes were created at the beginning of the project by using **[Balsamiq](https://balsamiq.com/)**. The final website are similar to the created wireframes, yet do differ as adding some functionalities and designs to all the pages.
+The wireframes are created at the beginning of the project by using **[Balsamiq](https://balsamiq.com/)**. The final website are similar to the created wireframes, yet do differ as adding some functionalities and designs to all the pages.
 
 #### Desktop & Tablet View
 ##### [Home] | [Tips of Learning] | [Store] | [About] | [My Account]
@@ -94,16 +94,16 @@ The wireframes were created at the beginning of the project by using **[Balsamiq
 
 ### Existing Features
 #### Home
-This is the introduction page at the website and is designed to give the users an insight on what to expect once they have registered the course. There is a Sign Up Now button that will link the user directly to all the available courses at the store.
+This is the introduction page at the website and is designed to give the users an insight on what to expect once they have registered the course. There is a **Sign Up Now** button that will link the user directly to all the available courses at the store.
 
 #### Contact
 A contact form is available at the bottom of the Home page, in order to to let the users to contact the website admin for any enquiry. The website admin can view all the details from the contact form at the admin backend page.
 
 #### Tips of Learning
-This is the tips of Chinese language learning page that given in YouTube video format, which consisted majority on how the foreigners interested in Chinese language and how they learn Chinese. The purpose of this page also to give the encouragement to the non-Chinese speaker to learn Chinese.
+This is the tips of Chinese language learning page that given in YouTube video format, which consisted majority on how the foreigners interested in Chinese language and how they learn Chinese. The purpose of this page also to give the encouragement to the non-Chinese speaker to learn in this language.
 
 #### Store
-The store page shows the available courses in this institute to be registered by the users. Once the user selected on the desired course, the select button will link the user to the course detail page to proceed to checkout. No shopping cart is required as only one course to be purchased at a time.
+The Store page shows the available courses in this institute to be registered by the users. Once the user selected on the desired course, the select button will link the user to the course detail page to proceed to checkout. No shopping cart is required as only one course to be purchased at a time.
 
 Besides, the super user will be able to edit and delete a course in this page if something need to be changed on a certain course.
 
@@ -113,7 +113,7 @@ At the checkout page, if the user has not registered as a new user, they will ne
 The user will need to fill out the details of their payment card in order to create the Stripe payment transaction at the backend. If this field is not being filled correctly, an error message will be shown so the user can have it corrected. A successful payment will link the user to a course registration confirmation page, together with the order details.
 
 #### About
-The about page consisted of about the institute, the goal and the present team that have raised the online business teaching.
+The About page consisted of about the institute, the goal and the present team that have raised the online business teaching.
 
 #### New User Registration
 The users can register an account from the website. No restriction given on who to register an account. The user must provide unique username and email address as it will be checked against the existing entries upon the registration. A unique password, not to be same as the username or email address will be needed, which must be entered twice to check if it is inputted correctly.
@@ -127,7 +127,7 @@ The user login page requires a username and password to proceed. There is a link
 The users are encouraged to register an account at the website as their information will be saved for further used especially when dealing with the course registration. Furthermore, any of the orders made will be recorded in their own profile page. This will ease the user to check back their previous orders.
 
 #### Store Management
-The store owner are able to add a new course at store management page.
+The store owner are able to add a new course at Store Management page.
 
 #### Admin Backend Management
 This is the Django admin page that been customized in order to ease the admin managament. The admin will be able to see the further details at this section, such as the details of the registered users plus their email address, all the orders, courses and the contact detail for any of the enquiries.
@@ -184,7 +184,7 @@ There will be the needs of a user review section in the website. This section ca
 
 ## Testing
 
-Throughout the development of this project, manual testing is implemented. The testing is simple yet effective to test on each of the function, link and the button. In the testing process, I was able to identify every issue before the deployment. This testing allow me to gone through every user story by the step of registration or order.
+Throughout the development of this project, manual testing is implemented. The testing is simple yet effective to test on each of the function, link and the button. In the testing process, I am able to identify every issue before the deployment. This testing allow me to gone through every user story by the step of registration or order.
 
 <details>
 	<summary>All the testing of this project can be found by clicking here</summary>
