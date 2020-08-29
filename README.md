@@ -215,6 +215,6 @@ There will be the needs of a user review section in the website. This section ca
 
 ### Acknowledgements
 - Praise God that He is giving me the chance to start and also to complete this course.
-- Special thanks to [Dick Vlaanderen](https://github.com/dickvla), my mentor from Code Institute, for his patience and his valuable advice throughout this project.
+- Special thanks to [Dick Vlaanderen](https://github.com/dickvla), my mentor from Code Institute, for his patience and his valuable advice throughout the course.
 - Thanks to the entire tutor support team at Code Institute for their guidance and great feedback.
 
