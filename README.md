@@ -71,7 +71,7 @@ Only 1 type of font is used throughout the website: **[Merriweather](https://fon
 
 ### Wireframes
 
-The wireframes were created at the beginning of the project by using **[balsamiq](https://balsamiq.com/)**. The final website are similar to the created wireframes, yet do differ as adding some functionalities and designs to all the pages.
+The wireframes were created at the beginning of the project by using **[Balsamiq](https://balsamiq.com/)**. The final website are similar to the created wireframes, yet do differ as adding some functionalities and designs to all the pages.
 
 #### Desktop & Tablet View
 ##### [Home] | [Tips of Learning] | [Store] | [About] | [My Account]
@@ -206,9 +206,12 @@ Throughout the development of this project, manual testing is implemented. The t
 
 <img src="media/testing/browser-compatibility.JPG" align=top width=800>
 
-</details>
+### User Stories
+
 
 ### Known Issues
+
+</details>
 
 ## Deployment
 
@@ -234,6 +237,18 @@ STRIPE_SECRET_KEY|`<STRIPE_SECRET_KEY>`
 4. SQlite3 is the local database for this Django project.
 5. All the necessary dependencies that listed in **requirements.txt** file need to be downloaded in order to run this project, by running the command at the terminal `pip3 install -r requirements.txt`
 6. Create a local development server by running the command `python3 manage.py runserver`.
+
+### Running Code in Local
+In order to clone the chinese-to-begin repository to local, follow the steps below:
+1. Navigate to [chinese_to_begin](https://github.com/kongteckmee/chinese_to_begin) repository.
+2. Click on green `Code` button on top right corner.
+3. In the **Clone with HTTPS** section, copy the clone URL for this repository.
+4. Go to GitPod Online IDE and open the terminal.
+5. Type the following `git clone https://github.com/kongteckmee/chinese_to_begin.git`.
+6. Press Enter to create the local repository.
+7. Create an `env.py` and import to the `settings.py` file to set the credentials for the environment variables in the local workspace.
+8. Install the requirements.txt by running this command `pip3 install -r requirements.txt` in the terminal.
+9. Launch the project by running this command `python3 manage.py runserver`.
 
 ### Deployment to Heroku
 The website is deployed at [Heroku](https://dashboard.heroku.com/apps/chinese-to-begin). These steps are applied to deploy this project:
