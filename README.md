@@ -193,7 +193,10 @@ Throughout the development of this project, manual testing is implemented. The t
 - [W3C Markup Validation](https://validator.w3.org/) is used to validate the code for HTML files.
     - Some warnings and errors were reported but they are related to the jinja code and Script usage.
 - [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) is used to validate the code for CSS files.
+    - Some warnings and errors were reported but they are related to the detection of `-webkit-user-select`, `-moz-user-select` and `-ms-user-select` as an unknown vendor extension, and use the same color at the allauth form.
 - [JSHint](https://jshint.com/) is used to validate the code for JS files.
+    - There are template literal syntax warnings related to the use of syntax only available in ES6.
+    - Warning on 'let' is only available in ES6.
 
 ### Responsiveness
 
