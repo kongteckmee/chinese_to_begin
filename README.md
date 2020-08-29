@@ -59,7 +59,7 @@ The sqlite3 database was used during the development. The PostgreSQL database wa
 
 Besides the normal e-commerce website models, such as the model of Store, UserProfile, Order and OrderLineItem, I have added 2 more models, that are Condition and Contact for future features. Condition model was added to indicate the existing or archive courses in the store so we can only show the existing courses to the user. While the Contact model was added to let the user to contact the website admin for any enquiry on the courses.
 
-<img src="media/models/models.png" align=top width=800>
+<img src="media/models/models.png" align=top width=1000>
 
 #### CSS Framework
 Bootstrap v4.5 framwork was used in the website.
@@ -201,16 +201,18 @@ Throughout the development of this project, manual testing is implemented. The t
 
 ### Responsiveness
 
-<img src="media/testing/responsiveness.JPG" align=top width=800>
+<img src="media/testing/responsiveness.JPG" align=top width=1000>
 
 ### Browser Compatibility
 
-<img src="media/testing/browser-compatibility.JPG" align=top width=800>
+<img src="media/testing/browser-compatibility.JPG" align=top width=1000>
 
 ### User Stories
 
+<img src="media/testing/user-stories-testing.JPG" align=top width=1000>
 
 ### Known Issues
+However, there are warnings or issues detected which related to the displaying of information about deprecations, breaking changes and other potential problems. This might caused by the YouTube links provided at the HTML page.
 
 </details>
 
