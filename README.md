@@ -212,7 +212,7 @@ STRIPE_PUBLIC_KEY|`<STRIPE_PUBLIC_KEY>`
 STRIPE_SECRET_KEY|`<STRIPE_SECRET_KEY>`
 
 4. SQlite3 is the local database for this Django project.
-5. All the necessary dependencies that listed in **requirements.txt** file need to be downloaded in order to run this project, by running the command at the terminal `pip3 install -r requirements.text`
+5. All the necessary dependencies that listed in **requirements.txt** file need to be downloaded in order to run this project, by running the command at the terminal `pip3 install -r requirements.txt`
 6. Create a local development server by running the command `python3 manage.py runserver`.
 
 ### Deployment to Heroku
@@ -223,9 +223,9 @@ The website is deployed at [Heroku](https://dashboard.heroku.com/apps/chinese-to
 4. Create a new application at Heroku:
     - Sign up for a new Heroku account.
     - Click on `New` and `Create new app` to create a new application.
-    - Set the name of the application and select your region and click on create app.
-5. Install PostgreSQL using `heroku addons:create heroku-postgresql:hobby-dev`.
-6. Create **Procfile** at root directory with `web: gunicorn chinese_to_begin.wsgi:application`.
+    - Set the name of the application, select your region and click on create app.
+5. Install PostgreSQL by using `heroku addons:create heroku-postgresql:hobby-dev`.
+6. Create **Procfile** at the root directory by added the content as `web: gunicorn chinese_to_begin.wsgi:application`.
 7. Add the environment variables at the **Settings**, under **Config Vars**:
 
 Enviroment Variables|Value
@@ -240,7 +240,7 @@ STRIPE_PUBLIC_KEY|`<STRIPE_PUBLIC_KEY>`
 STRIPE_SECRET_KEY|`<STRIPE_SECRET_KEY>`
 USE_AWS|`<True>`
 
-8. At **Deploy** tab, at the **Deployment method** section, connect Heroku by choosing **Connect GitHub** and **Enable Automatic Deployment** from the GitHub master branch to allow all new committed lines will be automatically deployed to the heroku application.
+8. At **Deploy** tab, at the **Deployment method** section, connect Heroku by choosing **Connect GitHub** and **Enable Automatic Deployment** from the GitHub master branch to allow all new committed lines to be automatically deployed to the heroku application.
 
 ## Credits
 
